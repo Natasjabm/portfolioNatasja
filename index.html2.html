@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Natasja Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/mitlogo.svg" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Hjem</a> </li>
+                <li><a href="index.html2.html">Om Mig</a> </li>
+                <li><a href="index.html3.html">Hjemmeside Projekter</a> </li>
+                <li><a href="index.html4.html">Grafiske Projekter</a> </li>
+                <li><a href="index.html5.html">Kunst & Blomster</a> </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Om Mig</h1>
+</section>
+
+<!------ Om Mig ------>
+
+<section class="om mig">
+    <div class="row">
+        <div class="om-col">
+            <img src="images/mig1webp.webp" alt="">
+        </div>
+        <div class="om-col">
+            <h1 class="overskriftV">Multimediedesigner Under Udvikling</h1>
+            <h2 class="Underoverskrift">Designentusiast med <br> Fokus på Fejlfrie Projekter</h2>
+            <p class="BrødtekstOmmig">Jeg bor i en lejlighed i København med
+                min kæreste. Jeg er et meget udadvendt,
+                pligtopfyldende, positiv og forstående
+                menneske, som går meget op i at folk
+                omkring mig har det godt, samt føler sig
+                godt til pas. <br> Derudover er jeg meget lærenem og
+                stræber lige nu efter at lærer alt jeg kan inde for UX/UI design. <br>
+                Jeg er meget ambitiøs, og mine visioner er ofte høje, (nogengange lidt for høje).- <br>
+                Jeg er derfor ikke bleg for at tage arbejdet med hjem.
+                Derudover er jeg meget perfektionistisk og detaljeorienteret.
+                Dette er både min værste fjende og store fordel.<br>
+                Jeg går meget op i at levere fejlfri projekter, og kan ofte have svært ved at slippe opgaven før jeg er helt tilfreds.
+                Dette gør også at hvert step i processen bliver lavet “fejlfrit” som gør det færdige resultat meget bedre i sidste ende.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+
+    <div class="blad2">
+        <hr2>
+        <img class="blomstbillede3" src="images/Blomstlyserrød.webp">
+    </div>
+
+</section>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Section with Text and Dots</title>
+</head>
+<body>
+
+<section class="tekstommig2">
+    <div class="tekstommig2">
+        <p>Jeg går lige nu på Multimediedesigner uddannelsen og har indtil videre gennem uddannelsen
+            og mit Grafisk Designer og UX/UI kursus udviklet erfaring med forskellige værktøjer og har bl.a. lært om,
+            hvordan man laver/designer hjemmesider, og andre interaktive produkter.
+            Som person er jeg kreativ og har flair for Grafisk og Web-design,
+            derfor har jeg valgt at lave et karrierskift fra Blomsterdekoratør til Multimedesigner.</p>
+    </div>
+
+
+    <section class="cta">
+        <h1>Tjek Alle Mine Kunst <br>
+            Projekter Ud!</h1>
+        <a href="index.html5.html" class="hero-btn">Kontakt Mig</a>
+    </section>
+
+
+</section>
+
+</body>
+</html>
+
+
+<!------ Kontakt mig ------>
+
+<section class="kontakt-col">
+    <div class="comment-box">
+        <h3>Kontakt Mig Her</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Navn">
+            <input type="text" placeholder="E-mail">
+            <textarea rows="5" placeholder="Tekst" style="resize: none"></textarea>
+            <button type="submit" class="hero-btn red-btn">Send</button>
+        </form>
+    </div>
+
+</section>
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h1>Mine Værdier</h1>
+    <P>Stræber efter at engagere og inspirere med visuel kreativitet,<br>
+        samt simpel elegance med dybde og betydning</P>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+    <h1> Lavet Med <i class="fa fa-heart-o"></i> Af Natasja Buom Madsen</h1>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------JavaScript for Toogle Menu------>
+<script>
+
+    let navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+<script src="https://kit.fontawesome.com/648072ba1a.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

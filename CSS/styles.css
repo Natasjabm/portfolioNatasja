@@ -1,0 +1,821 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Licorice', cursive;
+}
+
+/* Skrifttype til H1 */
+h1 {
+    font-family: 'Licorice', cursive; /* Skrifttype til H1 */
+    /* Yderligere H1-stilarter kan tilføjes her */
+}
+
+/* Skrifttype til H2 */
+h2 {
+    font-family: 'Kaisei HarunoUmi', serif; /* Skrifttype til H2 */
+    /* Yderligere H2-stilarter kan tilføjes her */
+}
+
+/* Skrifttype til brødtekst */
+p {
+    font-family: 'Inter', sans-serif; /* Skrifttype til brødtekst */
+    /* Yderligere p-stilarter kan tilføjes her */
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(42, 27, 15, 0.7), rgba(42, 27, 15, 0.7)),url("../images/natkopier.png");
+    background-position: 50% 25%;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-decoration: none;
+}
+.nav img ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 29px;
+}
+
+
+nav a:hover{
+    text-decoration: underline;
+    
+}
+.nav img ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F0EAE6;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav img ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.hero-btn:hover{
+    border: 1px solid #535B50;
+    background: #535B50;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .text-box h1{
+        font-size: 35px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #535B50;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*------ course ------*/
+
+    .course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    p{
+        color: #777;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        padding-left: 0px;
+    }
+
+    .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .course-col{
+        flex-basis: 31%;
+        background: #f0eae6;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+     .course-col:hover{
+         box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+     }
+     @media(max-width: 700px){
+         .row{
+             flex-direction: column;
+         }
+     }
+
+/*------ campus/hjemmeside projekter ------*/
+
+    .campus{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        margin-top: 140px;
+    }
+
+    .campus-forside{
+        background-image: url("../images/blad.webp");
+        background-position: -20% 30%;
+        z-index: 3;
+        background-repeat: no-repeat;
+        background-size: 30%;
+    }
+    .campus-col{
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    .campus-col img{
+        width: 100%;
+        display: block;
+    }
+    .layer{
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    .layer:hover{
+         background: rgb(83, 91, 80);
+    }
+    .layer h3{
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 35px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .layer:hover h3{
+        bottom: 49%;
+        opacity: 1;
+    }
+
+/*------ Projekterprøve chatgpt ------*/
+
+.headlinehjemmeside{
+    font-size: 3rem;
+}
+
+.projekter {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    position: relative; /* Tilføjer relativ positionering for at positionere billede og linje relativt til denne sektion */
+}
+
+.projekt-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Justeret for at starte teksten i toppen */
+    margin-bottom: 5%;
+    position: relative; /* Tilføjer relativ positionering */
+}
+
+.stort-billede {
+    flex-grow: 1;
+    max-width: calc(1.5 * (31% - 2%)); /* Justeret for at være 1.5 gange bredden af små billeder med lidt mellemrum */
+    margin-right: 5%; /* Lidt mellemrum mellem det store billede og teksten */
+}
+
+
+.stortbillede1{
+    width: 200%; /* Justeret bredde */
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-bottom: 20;
+}
+
+.stort-billedelogo{
+    width: 55%; /* Justeret bredde */
+    border-radius: 10px;
+    margin-left: -120px;
+    margin-top: -190px;
+    margin-bottom: -160px;
+}
+.dyrmobilstørrelse{
+    width: 140%; /* Justeret bredde */
+    border-radius: 10px;
+    margin-top: 30%;
+    margin-left: 80px;
+}
+.kursusstørrelse{
+    width: 220%; /* Justeret bredde */
+    border-radius: 10px;
+    margin-top: 30%;
+    margin-left: 80px;
+}
+.kursusstørrelse2{
+    width: 120%; /* Justeret bredde */
+    border-radius: 10px;
+    margin-top: -90%;
+    margin-left: 80px;
+}
+.dr\.nielsenstørrelse{
+    width: 160%; /* Justeret bredde */
+    border-radius: 10px;
+}
+.logostørrelse{
+    width: 340px; /* Justeret bredde */
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 50px;
+    margin-bottom: 3%;
+}
+.islogo{
+    width: 100%; /* Justeret bredde */
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: -60px;
+    margin-bottom: -150px;
+}
+.logototo{
+    width: 300%; /* Justeret bredde */
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: -60px;
+    margin-bottom: -150px;
+}
+
+
+.tekst-info {
+    text-align: left;
+    margin-left: 350px; /* Tilføj margin til venstre for at give plads mellem billede og tekst */
+    margin-right: 30px;
+    flex-grow: 1;
+}
+.tekst-info7 {
+    text-align: left;
+    margin-left: 350px; /* Tilføj margin til venstre for at give plads mellem billede og tekst */
+    margin-right: 30px;
+    flex-grow: 1;
+    margin-bottom: 300px;
+}
+.tekst-info10{
+    text-align: left;
+    margin-left: 250px; /* Tilføj margin til venstre for at give plads mellem billede og tekst */
+    margin-right: 30px;
+    flex-grow: 1;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+.tekst-info2{
+    text-align: left;
+    margin-left: 90px; /* Tilføj margin til venstre for at give plads mellem billede og tekst */
+    margin-right: 70px;
+    margin-top: -40%;
+    flex-grow: 1;
+}
+.tekst-info3 {
+    text-align: left;
+    margin-left: 550px; /* Tilføj margin til venstre for at give plads mellem billede og tekst */
+    margin-right: 30px;
+    margin-top: -29%;
+    flex-grow: 1;
+}
+
+
+.tekst-info4{
+    text-align: left;
+    margin-left: 490px; /* Tilføj margin til venstre for at give plads mellem billede og tekst */
+    margin-right: 70px;
+    margin-top: -40%;
+    flex-grow: 1;
+    margin-bottom: 70px;
+}
+
+.små-billeder {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.små-billeder img {
+    width: 31%;
+    border-radius: 10px;
+    margin: 0px 1%; /* Juster efter behov for mellemrum */
+}
+
+.små-billeder2 img{
+    width: 48%;
+
+
+}
+
+.projekt-container.gentaget-sektion {
+    margin-top: 40px; /* Juster efter behov for mellemrum mellem gentagne sektioner */
+    align-items: flex-end; /* Justeret for at placere teksten nederst i gentagne sektioner */
+}
+
+.lille-billede.gentaget-sektion {
+    bottom: auto; /* Nulstil bunden for gentagne sektioner */
+    top: 0; /* Justeret for at placere billedet øverst i gentagne sektioner */
+}
+
+.lille-billede.gentaget-sektion img {
+    transform: rotate(-44.69deg); /* Justeret rotation for det gentagne billede */
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .projekt-container {
+        flex-direction: column;
+    }
+    .stort-billede {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+    .tekst-info {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        text-align: center; /* Centrer teksten på små skærme */
+    }
+
+}
+hr{
+    height: 2px;
+    background-color: #535B50;
+    width: 85%;
+    border: none;
+    margin-top: 110px;
+    margin-left: 20px;
+
+}
+
+hr2{
+    height: 2px;
+    background-color: #956e6f;
+    width: 60%;
+    border: none;
+    margin-top: 90px;
+    margin-left: 188px;
+    margin-bottom: 60px;
+}
+
+.right{
+    margin-left: 18.5%;
+    margin-right: 1.5%;
+    margin-top: 30px;
+}
+
+.right hr{
+    width: 100%;
+    margin-top: 70px;
+    margin-left: 0;
+}
+
+.lille-billede {
+    position: absolute;
+    bottom: 0;
+    left: 10px; /* Tilføjte manglende enhed (px) */
+    transform: translate(0%, 50%);
+}
+
+.lille-billede img {
+    width: 20%;
+    height: auto;
+    margin-left: -100%;
+    transform: rotate(-0.12turn) scaleY(-1);
+    margin-top: 50px;
+}
+.bladbillede {
+    width: 14%;
+    height: auto;
+    margin-left: 90%;
+    transform: rotate(0.22turn) scaleY(-1) scaleX(-1);
+    overflow: hidden;
+    position: absolute;
+    margin-top: -30px;
+}
+.blomstbillede{
+    width: 14%;
+    height: auto;
+    margin-left: 90%;
+    transform: rotate(0.22turn) scaleY(-1) scaleX(-1);
+    overflow: hidden;
+    position: absolute;
+    margin-top: 20px;
+}
+.blomstbillede2{
+    width: 14%;
+    height: auto;
+    margin-left: 90%;
+    transform: rotate(0.22turn) scaleY(-1) scaleX(-1);
+    overflow: hidden;
+    position: absolute;
+    margin-top: -20px;
+}
+.blomstbillede3{
+    width: 30%;
+    height: auto;
+    margin-left: 70%;
+    transform: rotate(0.22turn) scaleY(-1) scaleX(-1);
+    overflow: hidden;
+    position: absolute;
+    margin-top: -230px;
+}
+
+.left{
+    transform: rotate(0.36turn) scaleX(-1);
+    margin-left: -17%;
+}
+.blad2{
+    display: flex;
+}
+.blomst2{
+    display: flex;
+}
+
+
+/*------ facilities/ Grafiske projekter ------*/
+
+.facilities{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url("../images/blad-reverse.webp");
+    background-repeat: no-repeat;
+    background-position: 115% 30%;
+    background-size: 30%;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*------ testimonials ------*/
+
+.testimonials{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f0eae6;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 35px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonial-col .fa{
+    color: #535B50;
+
+}
+@media(max-width: 700px){
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/*------ call to action ------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/træer.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    background-position: 60% 45%;
+    background-size: cover;
+    position: relative;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+
+/*------ footer ------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #535B50;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+     color: #535B50;
+}
+
+/*-------- Om Mig --------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(42, 27, 15, 0.7), rgba(42, 27, 15, 0.7)),url("../images/blomst.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-position: -10% 61%;
+    background-size: cover;
+    position: relative;
+}
+.om-mig{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.overskriftV{
+    margin-left: -40%;
+    margin-top: 50px;
+    font-size: 2.8rem;
+
+}
+.Underoverskrift{
+    margin-left: -30%;
+    margin-top: 5px;
+}
+.BrødtekstOmmig{
+    margin-top: 30px;
+}
+.row{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.om-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.om-col img{
+    width: 100%;
+    border-radius: 320px;
+}
+.om-col h1{
+    padding-top: 0;
+}
+.om-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    font-size: 1.4rem;
+    border: 1px solid #535B50;
+    background: transparent;
+    color: #535B50;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+/*-------- Grafiske_projekter --------*/
+
+.grafisk-projekter{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.grafisk-left{
+    flex-basis: 65%;
+}
+.grafisk-left img{
+    width: 80%;
+}
+.grafisk-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.grafisk-left p{
+    color: #f0eae6;
+    padding: 0;
+}
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    padding: 10px 20px;
+    width: 72%;
+
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0f0;
+}
+.comment-form button{
+    margin: 10px 0;
+}
+
+.pc{
+    display: flex;
+}
+
+.mobile{
+    display: none;
+}
+
+.små-billeder-container{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+@media (min-width: 700px){
+    .sub-header h1{
+        font-size: 24px;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+
+    .dyr-mobile{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.tekstommig2{
+    margin: auto;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+
+
+
+
+
